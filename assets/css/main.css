@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#section3 .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#section3 .container .box .card {
+  text-align: center;
+  width: 25%;
+  height: 200px;
+  background-color: #f1f5f9;
+  transition: 0.5s;
+}
+#section3 .container .box .card .fa-solid {
+  font-size: 30px;
+  color: #678E3F;
+  padding-top: 25px;
+}
+#section3 .container .box .card h3 {
+  color: #08111C;
+  letter-spacing: 3px;
+  font-family: "Catamaran", sans-serif;
+}
+#section3 .container .box .card p {
+  color: #98a6b2;
+}
+#section3 .container .box .card:hover {
+  transform: scale(1.05);
+  background-color: white;
+  border-bottom: 2px solid #678E3F;
+}
+@media only screen and (max-width: 992px) {
+  #section3 .container .box {
+    flex-direction: column;
+  }
+}
+#section3 .container .tea-station {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 90px;
+  width: 100%;
+  padding-top: 80px;
+}
+#section3 .container .tea-station .img-tea {
+  height: 350px;
+  width: 50%;
+  border: 5px solid #678E3F;
+  background-image: url("../images/about-bcg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section3 .container .tea-station .img-tea:hover {
+  background-size: 110%;
+  background-image: linear-gradient(rgba(0, 128, 0, 0.377), rgba(33, 87, 33, 0.349));
+}
+#section3 .container .about-our {
+  width: 50%;
+}
+#section3 .container .about-our .about-head {
+  font-family: "Grand Hotel", cursive;
+  color: #678E3F;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+#section3 .container .about-our h2 {
+  font-family: "Catamaran", sans-serif;
+  color: #08111C;
+}
+#section3 .container .about-our p {
+  width: 450px;
+  font-family: "Catamaran", sans-serif;
+  color: #98a6b2;
+}
+#section3 .container .about-our button {
+  width: 140px;
+  height: 30px;
+  background-color: #678E3F;
+  border: 0;
+  color: white;
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 4px;
+  font-weight: 600;
+  transition: 0.5s;
+  font-size: 12px;
+  cursor: pointer;
+}
+#section3 .container .about-our button:hover {
+  background-color: rgb(144, 209, 106);
+  color: #678E3F;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,95 @@
+#section3 {
+  .container {
+    .box {
+      @include flexBox();
+      width: 100%;
+      .card {
+        // @include flexBox();
+        text-align: center;
+        width: 25%;
+        height: 200px;
+        background-color: #f1f5f9;
+        transition: 0.5s;
+        .fa-solid {
+          font-size: 30px;
+          color: $icon-color;
+          padding-top: 25px;
+        }
+        h3 {
+          color: $text-color;
+          letter-spacing: 3px;
+          font-family: $font1;
+        }
+        p {
+          color: #98a6b2;
+        }
+        &:hover {
+          transform: scale(1.05);
+          background-color: white;
+          border-bottom: 2px solid $icon-color;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+    }
+    .tea-station {
+      @include flexBox();
+      column-gap: 90px;
+      width: 100%;
+      padding-top: 80px;
+      .img-tea {
+        height: 350px;
+        width: 50%;
+        border: 5px solid $icon-color;
+        background-image: url("../images/about-bcg.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-size: 110%;
+          background-image: linear-gradient(
+            rgba(0, 128, 0, 0.377),
+            rgba(33, 87, 33, 0.349)
+          );
+        }
+      }
+    }
+    .about-our {
+      width: 50%;
+      .about-head {
+        font-family: $font2;
+        color: $icon-color;
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight: 900;
+      }
+      h2 {
+        font-family: $font1;
+        color: $text-color;
+      }
+      p {
+        width: 450px;
+        font-family: $font1;
+        color: #98a6b2;
+      }
+      button {
+        width: 140px;
+        height: 30px;
+        background-color: $icon-color;
+        border: 0;
+        color: white;
+        font-family: $font1;
+        letter-spacing: 4px;
+        font-weight: 600;
+        transition: 0.5s;
+        font-size: 12px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(144, 209, 106);
+          color: $icon-color;
+        }
+      }
+    }
+  }
+}
